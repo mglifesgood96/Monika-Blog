@@ -1,0 +1,39 @@
+$main-color: rgb(79, 162, 63);
+$yellow-color: #f1a500;
+
+.button{
+    background-color: $main-color;
+    margin: 2rem 0 0 0;
+    font-family: $font-article;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover{
+        background-color: lighten($main-color, 10%);
+    }
+    &--yellow{
+        background-color: $yellow-color;
+        color: white;
+        &:hover{
+            background-color: darken($yellow-color, 5%);
+        }
+    }
+    
+}
+
+.btn-block{
+    display: block;
+}
+
+a{
+    font-family: $font-article;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    display: block;
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+//fonts-color
+$font-main-color: rgb(48, 48, 48);
+$tag-color: rgb(38, 177, 91);
+
+//fonts
+$font-article: 'Open Sans';
+$font-special: 'Poppins', sans-serif;
+
+@mixin paragraph{
+    color: $font-main-color;
+    font-family: $font-article;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 2;
+    margin: 2.5rem 0;
+}
+
+strong{
+    font-size: inherit;
+    font-weight: 900;
+}
+
+*{
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5{
+    color: $font-main-color;
+    font-family: $font-special;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 2.5rem 0;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+h3{
+    font-size: 3rem;
+    margin: 1.8rem 0;
+}
+
+h4{
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+}
+
+p{
+    @include paragraph();
+}
+
+.paragraph-small{
+    color: $font-main-color;
+    line-height: 1.8;
+    font-size: 1.7rem;
+    text-align: left;
+    margin: 1rem 0;
+    &--justify{
+        text-align: justify;
+    }
+}
+
+.paragraph-smallest{
+    color: $font-main-color;
+    line-height: 1.8;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 1rem 0;
+    &--justify{
+    }
+}
+
+.tag{
+    font-family: $font-article;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: white;
+    background-color: $tag-color;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    &:hover{
+        background-color: darken($tag-color, 5%);
+    }
+}
+
+blockquote{
+    color: $font-main-color;
+    display: block;
+    padding: 4rem 2rem 4rem 5rem;
+    border-left: 1rem solid rgb(255, 217, 0);
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: $font-special;
+    margin: 5rem 0;
+}

@@ -1,0 +1,33 @@
+nav{
+    background-color: darkblue;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    }
+
+.nav-content{
+    max-width: 1024px;
+    width: 1024px;
+    margin: 0 auto;
+}
+.nav-margin{
+    width: calc(100% - 100px);
+    
+    background-color: red;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-logo{
+        font-size: 2rem;
+    }
+    .nav-links{
+        list-style: none;
+        display: flex;
+        padding: 10px;
+        a{
+            text-decoration: none;
+        }
+    }
+}
