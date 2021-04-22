@@ -181,7 +181,7 @@ p {
 }
 
 .hello__image {
-  background-image: url("/img/monixn.png");
+  background-image: url("img/monixn.png");
   min-width: 350px;
   height: 400px;
   background-size: cover;
